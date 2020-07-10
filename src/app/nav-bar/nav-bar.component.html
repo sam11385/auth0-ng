@@ -1,13 +1,15 @@
 <header>
     <mat-toolbar>
         <div>
-            <button class="mr-10" mat-raised-button routerLink="/">Home</button>
+            <button class="mr-10" mat-raised-button routerLink="/">
+        Home
+      </button>
 
-            <button class="mr-10" mat-raised-button routerLink="profile" *ngIf="auth.loggedIn">
+            <button class="mr-10" mat-raised-button routerLink="profile" *ngIf="auth.loggedIn" routerLinkActive="active">
         Profile
       </button>
 
-            <button mat-raised-button routerLink="external-api" *ngIf="auth.loggedIn">
+            <button mat-raised-button routerLink="external-api" *ngIf="auth.loggedIn" routerLinkActive="active">
         External API
       </button>
         </div>
