@@ -1,5 +1,5 @@
-<mat-card>
-    <pre *ngIf="auth.userProfile$ | async as profile">
-      <code>{{ profile | json }}</code>
+<mat-card *ngIf="auth.userProfile$ | async as profile">
+    <pre>
+    <code>{{ profile | json }}</code>
   </pre>
 </mat-card>
