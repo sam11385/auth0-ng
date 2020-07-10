@@ -1,10 +1,10 @@
-<div>
+<div class="top">
     <button mat-raised-button color="primary" (click)="pingApi()">
     Ping API
   </button>
 </div>
 
-<div>
+<div class="bottom">
     <mat-card *ngIf="responseJson">
         <pre>
           <code>{{ responseJson | json }}</code>

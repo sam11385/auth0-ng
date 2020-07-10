@@ -12,10 +12,13 @@
       </button>
         </div>
         <div>
+            <span class="hello" *ngIf="auth.userProfile$ | async as profile">
+        Hello, {{ profile.given_name }}
+      </span>
             <button mat-raised-button color="primary" (click)="auth.login()" *ngIf="!auth.loggedIn">
         Log In
       </button>
-            <button mat-raised-button color="primary" (click)="auth.logout()" *ngIf="auth.loggedIn">
+            <button class="ml-10" mat-raised-button color="primary" (click)="auth.logout()" *ngIf="auth.loggedIn">
         Log Out
       </button>
         </div>
