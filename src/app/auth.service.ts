@@ -22,7 +22,7 @@ export class AuthService {
       domain: 'dev-2i0yz9dc.us.auth0.com',
       client_id: 'BePzfDdJT90zbc6yzYLqCipZo1VOwkis',
       redirect_uri: `${window.location.origin}`,
-      audience: 'YOUR_API_IDENTIFIER',
+      audience: 'https://api.niceapis.com',
     })
   ) as Observable<Auth0Client>).pipe(
     shareReplay(1), // Every subscription receives the same shared value

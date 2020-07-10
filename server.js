@@ -7,8 +7,8 @@ const app = express();
 
 // Set up Auth0 configuration
 const authConfig = {
-    domain: "YOUR_DOMAIN",
-    audience: "YOUR_API_IDENTIFIER",
+    domain: "dev-2i0yz9dc.us.auth0.com",
+    audience: "https://api.niceapis.com",
 };
 
 // Define middleware that validates incoming bearer tokens
