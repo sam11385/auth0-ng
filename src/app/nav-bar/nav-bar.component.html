@@ -1,13 +1,19 @@
 <header>
     <mat-toolbar>
-        <button mat-raised-button color="primary" (click)="auth.login()" *ngIf="!auth.loggedIn">
-      Log In
-    </button>
-        <button mat-raised-button color="primary" (click)="auth.logout()" *ngIf="auth.loggedIn">
-      Log Out
-    </button>
+        <div>
+            <button class="mr-10" mat-raised-button routerLink="/">Home</button>
 
-        <a routerLink="/">Home</a>&nbsp;
-        <a routerLink="profile" *ngIf="auth.loggedIn">Profile</a>
+            <button mat-raised-button routerLink="profile" *ngIf="auth.loggedIn">
+        Profile
+      </button>
+        </div>
+        <div>
+            <button mat-raised-button color="primary" (click)="auth.login()" *ngIf="!auth.loggedIn">
+        Log In
+      </button>
+            <button mat-raised-button color="primary" (click)="auth.logout()" *ngIf="auth.loggedIn">
+        Log Out
+      </button>
+        </div>
     </mat-toolbar>
 </header>
